@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://wallpaperaccess.com/full/2604448.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#div-master {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #1e1c1c;
+    border-radius: 50px;
+    border: none;
+}
+
+#logo-img {
+    width: 400px;
+    opacity: .6;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+#box-main {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+    padding-left: 5px;
+}
+
+.img-stone,
+.img-paper,
+.img-scissors {
+    width: 150px;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+button {
+    border: none;
+    background: transparent;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: .4;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ac2f2d;
+    margin-top: 10px;
+}
+
+#result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+
+}
+
+figcaption {
+    font-size: 20px;
+    color: #ffffff81;
+}
+
+.fig-one {
+    color: #9b0f0feb;
+}
+
+.fig-two {
+    color: #1a1de6c4;
+}
+
+.fig-thre {
+    color: #36c912c4;
+}
+
+p {
+    font-size: 30px;
+    color: #ffffff81;
+    margin-top: 15px;
+}
+
+.winner {
+    color: #9b0f0feb;
+}
+
+.lose {
+    color: #1a1de6c4;
+}
+
+.draw {
+    color: #36c912c4;
+}
+
+.not-bottom {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+
+    #logo-img {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .img-stone,
+    .img-paper,
+    .img-scissors {
+        width: 90px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    #logo-img {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .img-stone,
+    .img-paper,
+    .img-scissors {
+        width: 60px;
+    }
+
+    .fig-one,
+    .fig-two,
+    .fig-thre {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}

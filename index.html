@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokenPiece</title>
+    <link rel="icon" type="image/png"
+        href="https://i.pinimg.com/736x/34/2e/8a/342e8ac5c7a65b2a68bc33e50f4f044b--high-resolution-images-logo-google.jpg" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+    <div id="div-master">
+        
+        <picture><img id="logo-img"
+                src="https://wallpapers.com/images/hd/one-piece-4k-neon-light-logo-ailgzi28nmlqcq4r.jpg" alt="img-logo">
+            <figcaption id="result"></figcaption>
+        </picture>
+        
+        <h1>JokenPiece</h1>
+
+        <main id="box-main">
+            
+            <button type="button" onclick="click_item('stone')">
+                <picture><img src="./assets/Stone.webp" alt="stone-img" class="img-stone">
+                    <figcaption class="fig-one">Pedra</figcaption>
+                </picture>
+            </button>
+            
+            <button type="button" onclick="click_item('paper')">
+                <picture><img src="./assets/Paper.webp" alt="paper-img" class="img-paper">
+                    <figcaption class="fig-two">Papel</figcaption>
+                </picture>
+            </button>
+            
+            <button type="button" onclick="click_item('scissors')">
+                <picture><img src="./assets/scissors.webp" alt="scissor-img" class="img-scissors">
+                    <figcaption class="fig-thre">Tesoura</figcaption>
+                </picture>
+            </button>
+        
+        </main>
+
+        <p>Pontuação Piratas:<span class="winner">0</span></p>
+        <p>Pontuação Marinheiros:<span class="lose">0</span></p>
+        <p class="not-bottom">Empate:<span class="draw">0</span></p>
+    
+    </div>
+</body>
+
+    <script src="./script.js"></script>
+
+</html>
